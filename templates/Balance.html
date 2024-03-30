@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Balance</title>
+</head>
+<body>
+<center>
+    <ul>
+        {% for i in value %}
+        <h3>    Name:         {{ i.name }}</h3> <br>
+        <h3>AcNumber:         {{ i.accountnumber }}</h3> <br>
+        <h3> Balance:         {{ i.balance }}</h3> <br>
+        {% endfor %}
+    </ul>
+    <a href="{{ url_for ('Go') }}">Home</a>
+</center>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<center>
+    <h1>|| AZAD BANK ||</h1>
+    <form method="post" action="{{ url_for('Go') }}">
+        <table border="2">
+            
+                 PIN  :
+                {% for i in a %}
+                    {{i}}
+                {% endfor %}
+            
+            <tr>
+                <td><button type="submit" name="destination" value="url9">9</button></td> <td></td> <td></td>  <td><button type="submit" name="destination" value="url8">8</button></td>  <td></td> <td></td> <td><button type="submit" name="destination" value="url7">7</button></td> <td></td> <td></td> <td><button type="submit" name="destination" value="clear">-clear-</button></td> 
+            </tr> <br>
+            <tr></tr>
+            <tr>
+                <td><button type="submit" name="destination" value="url6">6</button></td>  <td></td> <td></td> <td><button type="submit" name="destination" value="url5">5</button></td> <td></td> <td></td> <td><button type="submit" name="destination" value="url4">4</button></td> <td></td> <td></td> <td><button type="submit" name="destination" value="url0">---0---</button></td>
+            </tr><br>
+            <tr></tr>
+            <tr>
+                <td><button type="submit" name="destination" value="url3">3</button></td> <td></td> <td></td>  <td><button type="submit" name="destination" value="url2">2</button></td> <td></td> <td></td> <td><button type="submit" name="destination" value="url1">1</button></td> <td></td> <td></td> <td><button type="submit" name="destination" value="cancel">cancel</button></td>
+            </tr><br>
+        </table><br>
+        <button><a href="{{ url_for('Go')  }}">Go</a></button>
+    </form>
+ pin : 789  ,  456 , 123 , 963 , 424 , 837
+</center>
+</body>
+</html>

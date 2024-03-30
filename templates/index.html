@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body > <!--style="color: black;background-color: royalblue;"-->
+    <hr>
+    <hr>
+    <center>
+        <h1>||  AZAD BANK OF INDIA  ||</h1>
+    </center>
+    <hr>
+    <hr>
+    <center>
+        {% if True %}
+        <tr><td></td><td><h3> {{ value.name }} || AcNo:{{ value.accountnumber }}</h3> </td><td></td></tr> <br> <br>
+        <tr>       <td><button><a href="{{ url_for('Deposit')  }}">Deposit</a></button></td> <td>-----------</td> <td><button><a href="{{ url_for('Withdrawal' )  }}">Withdrawal</a></button></td> <td>-----------</td> <td><button><a href="{{ url_for('Balance'  )  }}">Balance</a></button> </td>           </tr> <br>
+        {% endif %}
+ 
+    </center>
+    <td><button><a href="{{ url_for('cancel')  }}">Close</a></button></td>
+</body>
+
+
+
